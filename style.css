@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+*::selection{
+    background-color: #f45b95;
+    color: #fff;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 75px;
+
+}
+/* left nav */
+#leftnav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px;
+}
+#leftnav img{
+    width: 75px;
+    height: 20px;
+}
+#leftnav img:hover{
+    cursor:pointer;
+    background-color: #c7c0c0;
+}
+#leftnav a{
+     color: #0000007a;
+     text-decoration: none;
+     margin: 15px 15px;
+     text-transform: capitalize;
+     font-size: 15px;
+     font-weight: 600; 
+}
+#leftnav a:hover{
+    color: #1d1c1c;
+}
+/*  right nav */
+#rightnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rightnav button{
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+    text-transform: capitalize;
+    margin: 30px 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color:#0000006a ;
+}
+#rightnav #kk{
+    width:80px ;
+    height:40px;
+    background-color: #f45b95;
+    border: none;
+    color: #fff;
+}
+#rightnav i{
+   font-size: 20px;
+   color: #00000066;
+}
+#video {
+    width: 100%;
+    height: 72%;
+    position: relative;
+}
+button:hover{
+    cursor: pointer;
+}
+
+i:hover{
+    cursor: pointer;
+}
+#video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000089;
+    /*background-color: #5b6af451;*/
+    position: absolute;
+}
+#eliment {
+    position: absolute;
+    top: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#eliment a{
+    font-size: 15px;
+    background-color:#00000083;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;        
+    
+    padding: 16px 21px;
+    cursor: pointer;
+    margin: 12px 12px;
+}
+
+/* first a teg */
+#eliment a:nth-child(1){
+    background-color: #fff;
+    color: #000;
+}
+#eliment a:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all ease 0.5s;
+}
+#content h1{
+    position: absolute;
+    top: 25%;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 45px;
+}
+
+#content #jj{
+    position: absolute;
+    top: 43%;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+}
+
+#content input{
+position: absolute;
+width: 650px;
+height: 60px;
+border-radius: 50px;
+top: 60%;
+padding:0 45px;
+font-size: 20px;
+outline: none; 
+border: none;
+}
+#eliment2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    bottom: 5%;
+}
+#eliment2 a{
+    font-size: 14px;
+    font-weight:350;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: lowercase;
+    text-decoration: none;        
+    padding: 6px 15px;
+    cursor: pointer;
+    border: solid 1px #7e7676;
+    margin: 12px 9px ;
+}
+#eliment2 #ss{
+    font-size: 12px;
+    color: #fff;
+}
+/*second page */
+#bottom{
+    
+    width: 100%;
+    height: 100vh;
+}
+.sachin {
+    position: relative;
+    background-color: #f45b95;
+    border-radius: 10px;
+    width: 20%;
+    height:35%;
+    margin: 30px 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+ .sachin img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+ .sachin #sh{
+    position: absolute;
+    width: 100%;
+    height: 125px;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.389));
+    bottom: -135px;
+}
+.sachin:hover #sh{
+    bottom: 0;
+    transition: all ease 0.7s;
+}
+#sh{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sachin #sh #ww{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffb4;
+    font-size: 20px;
+    margin: 30px 30px;
+    width: 37px;
+    height: 37px;
+    border-radius: 8px;
+    right: 16%;
+}
+.sachin #sh i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffb4;
+    font-size: 25px;
+    margin: 30px 30px;
+    width: 37px;
+    height: 37px;
+    border-radius: 8px;
+}
+#sh h1{
+    background-origin: #fff;
+    font-size: 14px;
+    margin: 30px 30px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+
+#last{
+    width: 100%;
+    height: 500px;
+   /* border-top: 5px solid rgb(21, 1, 1);*/
+    position: relative;
+}
+#buttonn{
+    width: 100%;
+    height: 100px;
+    /**background-color: #f45b95;/*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+}
+#buttonn #vv{
+    width: 340px;
+    height: 65px;
+    font-size: 25px;
+    background-color: #f45b95;
+    color: #fff;
+    border-radius: 20px;
+    outline: auto;
+}
+#buttonn>h6{
+    font-size: 25px;
+    color: rgba(255, 0, 0, 0.827);
+    cursor: pointer;
+}
+
+#last img{
+    width: 150px;
+    height: 150px;
+    margin: 15px 420px;
+}
+
+#last h5{
+    margin: 0 420px;
+    font-size: 20px;
+}
+#last h4{
+    position: absolute;
+    top:50%;
+    right: 20%;
+}
+h4>i{
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+/*
+#div h1:nth-child(1){
+   line-height: 12px; 
+   outline: none; 
+}*/
+
+/*1...  https://cdn.dribbble.com/uploads/39417/original/49dbf46eae15d227fc95a69cee31251e.mp4?1657824906*/
+
